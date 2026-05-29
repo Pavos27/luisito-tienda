@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        <img src="IMAGENES/logo app.jpg" alt="">
+        </div>
+        <h1>MICROCONTROLADORES</h1>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="carrito"><a href="#" id="btnCarrito">Carrito</a></li>
+                    <li><a href="gama alta.html">inicio</a></li>
+                    <li><a href="atencion al cliente.html">atencion al cliente</a></li>
+                    <li><a href="gama alta.html">Gama alta</a></li>
+                    <li><a href="gama media.html">Gama media</a></li>
+                    <li><a href="gama baja.html">Gama baja</a></li>
+                    <li><a href="Untitled-1.html">Formas de pago</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor-items">
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC18F4550.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC18F4550</h2>
+                <h3>8 bits de alto rendimiento de Microchip, destacado por su módulo USB 2.0 integrado, ideal para aplicaciones de baja potencia (tecnología nanoWatt) y conectividad</h3>
+                <p class="precio">$400</p>
+                <button onclick="agregarAlCarrito('PIC18F4550', 400)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/-STM32F407VG microcontroller.jpg" alt="">
+            <div class="info-producto">
+                <h2>STM32F407VG </h2>
+                <h3>8 bits basado en el núcleo ARM Cortex-M4 (con FPU), diseñado por STMicroelectronics. Opera hasta 168 MHz, ofreciendo 1 MB de Flash, 192 KB de RAM</h3>
+                <p class="precio">$390</p>
+                <button onclick="agregarAlCarrito('STM32F407VG microcontroller', 390)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/descarga.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>ESP32</h2>
+                <h3>bajo costo y consumo, famoso por integrar Wi-Fi y Bluetooth de doble núcleo, operando hasta 240 MHz. Es la evolución del ESP8266, ideal para IoT, con 520 KB SRAM, múltiples GPIOs. </h3>
+                <p class="precio">$559</p>
+                <button onclick="agregarAlCarrito('ESP32', 559)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/TMS320F28379D.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>TMS320F28379D</h2>
+                <h3> 32 bits de la serie C2000 Delfino de Texas Instruments, diseñado para control industrial y conversión de potencia. Cuenta con doble CPU (2x 200MHz) y doble CLA, 1024KB Flash, 204KB RAM</h3>
+                <p class="precio">$460</p>
+                <button onclick="agregarAlCarrito('Microcontrolador PU 8 bits', 460)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC16F84 png.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC16F84</h2>
+                <h3>8 bits popular. Memoria Flash de 1K palabras, 68 bytes de RAM, 64 bytes de EEPROM, 13 pines de E/S y funciona a 5V con velocidades de hasta 20MHz</h3>
+                <p class="precio">$524</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 524)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/ATmega328P xd.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>ATmega328P</h2>
+                <h3>8 bits de alto rendimiento y bajo consumo de 28 pines, Opera entre 1.8V y 5.5V, con 32KB de memoria flash, 2KB SRAM, 1KB EEPROM y velocidades de hasta 20 MHz.</h3>
+                <p class="precio">$155</p>
+                <button onclick="agregarAlCarrito('Microcontrolador fexible', 155)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC16F877A saus.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC16F877A</h2>
+                <h3>8 bits popular, de alto rendimiento y bajo costo de Microchip Technology, basado en arquitectura RISC con 35 instrucciones. Cuenta con 14 KB de memoria Flash, 368 bytes de RAM</h3>
+                <p class="precio">$139</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 139)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/STM32F103C8T6 MAS.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>STM32F103C8T6</h2>
+                <h3>32 bits basado en ARM Cortex-M3 (72 MHz) muy popular (conocido como "Blue Pill"), que ofrece alto rendimiento, 64KB Flash, 20KB SRAM, y con perifericos</h3>
+                <p class="precio">$319</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 319)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC10F200.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC10F200</h2>
+                <h3>de memoria Flash, 8 bits de Microchip, destacado por ser extremadamente pequeño, de bajo costo y bajo consumo. Basado en arquitectura RISC, cuenta con 
+                   
+                    de SRAM</h3>
+                <p class="precio">$55</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 55)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC12F508.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC12F508</h2>
+                <h3>  
+                    8 bits de bajo costo, 8 pines y alto rendimiento (arquitectura RISC), ideal para aplicaciones simples de control. Cuenta con 512-768 palabras de memoria flash, 25 bytes de RAM</h3>
+                <p class="precio">$38</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 38)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/ATtiny85 K.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>ATtiny85</h2>
+                <h3>8 bits, alto rendimiento y bajo consumo de Microchip, con 8 pines (encapsulado DIP-8 comúnmente), 8KB Flash, 512B SRAM y 512B EEPROM</h3>
+                <p class="precio">$80</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 80)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC16F54 CUM.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC16F54</h2>
+                <h3> 8 bits basado en Flash de alto rendimiento y bajo costo, ideal para aplicaciones sencillas. Cuenta con 768 bytes de memoria de programa, 25 bytes de RAM</h3>
+                <p class="precio">$35</p>
+                <button onclick="agregarAlCarrito('2 placas de microcontrolador', 35)">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!--  CARRITO LATERAL -->
+    <div id="carritoPanel">
+        <h2>Carrito</h2>
+        <ul id="listaCarrito"></ul>
+
+        <p class="total">Total: $<span id="totalCarrito">0</span></p>
+
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="btn-comprar" onclick="finalizarCompra()">Finalizar compra</button>
+    </div>
+
+   
+
+    <script src="carritooo.js"></script>
+</body>
+</html>

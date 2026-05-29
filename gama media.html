@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        <img src="IMAGENES/logo app.jpg" alt="">
+        </div>
+        <h1>MICROCONTROLADORES Gama media</h1>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="carrito"><a href="#" id="btnCarrito">Carrito</a></li>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="gama alta.html">Gama alta</a></li>
+                    <li><a href="gama baja.html">Gama baja</a></li>
+                    <li><a href="Untitled-1.html">Formas de pago</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <div class="contenedor-items">
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/PIC16F84 png.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>PIC16F84</h2>
+            <h3>8 bits popular. Memoria Flash de 1K palabras, 68 bytes de RAM, 64 bytes de EEPROM, 13 pines de E/S y funciona a 5V con velocidades de hasta 20MHz</h3>
+            <p class="precio">$524</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 524)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/ATmega328P xd.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>ATmega328P</h2>
+            <h3>8 bits de alto rendimiento y bajo consumo de 28 pines, Opera entre 1.8V y 5.5V, con 32KB de memoria flash, 2KB SRAM, 1KB EEPROM y velocidades de hasta 20 MHz.</h3>
+            <p class="precio">$155</p>
+            <button onclick="agregarAlCarrito('Microcontrolador fexible', 155)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/PIC16F877A saus.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>PIC16F877A</h2>
+            <h3>8 bits popular, de alto rendimiento y bajo costo de Microchip Technology, basado en arquitectura RISC con 35 instrucciones. Cuenta con 14 KB de memoria Flash, 368 bytes de RAM</h3>
+            <p class="precio">$139</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 139)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/STM32F103C8T6 MAS.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>STM32F103C8T6</h2>
+            <h3>32 bits basado en ARM Cortex-M3 (72 MHz) muy popular (conocido como "Blue Pill"), que ofrece alto rendimiento, 64KB Flash, 20KB SRAM y con perifericos,</h3>
+            <p class="precio">$319</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 319)">Añadir al carrito</button>
+        </div>
+    </div>
+ </div>
+
+ <!--  CARRITO LATERAL -->
+ <div id="carritoPanel">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+
+    <p class="total">Total: $<span id="totalCarrito">0</span></p>
+
+    <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button class="btn-comprar" onclick="finalizarCompra()">Finalizar compra</button>
+</div>
+
+
+
+<script src="carritooo.js"></script>
+</body>
+
+
+<script src="carritooo.js"></script>
+</body>
+
+</html>

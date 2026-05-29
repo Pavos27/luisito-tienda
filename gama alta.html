@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        <img src="IMAGENES/logo app.jpg" alt="">
+        </div>
+        <h1>MICROCONTROLADORES Gama alta</h1>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="carrito"><a href="#" id="btnCarrito">Carrito</a></li>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="gama media.html">Gama media</a></li>
+                    <li><a href="gama baja.html">Gama baja</a></li>
+                    <li><a href="Untitled-1.html">Formas de pago</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor-items">
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/PIC18F4550.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>PIC18F4550</h2>
+                <h3>8 bits basado en el núcleo ARM Cortex-M4 (con FPU), diseñado por STMicroelectronics. Opera hasta 168 MHz, ofreciendo 1 MB de Flash, 192 KB de RAM</h3>
+                <p class="precio">$400</p>
+                <button onclick="agregarAlCarrito('PIC18F4550', 400)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/-STM32F407VG microcontroller.jpg" alt="">
+            <div class="info-producto">
+                <h2>STM32F407VG </h2>
+                <h3> 32 bits de la serie C2000 Delfino de Texas Instruments, diseñado para control industrial y conversión de potencia. Cuenta con doble CPU (2x 200MHz) y doble CLA, 1024KB Flash, 204KB RAM</h3>
+                <p class="precio">$390</p>
+                <button onclick="agregarAlCarrito('STM32F407VG microcontroller', 390)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/descarga.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>ESP32</h2>
+                <h3>bajo costo y consumo, famoso por integrar Wi-Fi y Bluetooth de doble núcleo, operando hasta 240 MHz. Es la evolución del ESP8266, ideal para IoT, con 520 KB SRAM, múltiples GPIOs. </h3>
+                <p class="precio">$559</p>
+                <button onclick="agregarAlCarrito('ESP32', 559)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="IMAGENES/TMS320F28379D.jpg" alt="">
+            </figure>
+            <div class="info-producto">
+                <h2>TMS320F28379D</h2>
+                <h3> 32 bits de la serie C2000 Delfino de Texas Instruments, diseñado para control industrial y conversión de potencia. Cuenta con doble CPU (2x 200MHz) y doble CLA, 1024KB Flash, 204KB RAM</h3>
+                <p class="precio">$460</p>
+                <button onclick="agregarAlCarrito('Microcontrolador PU 8 bits', 460)">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!--  CARRITO LATERAL -->
+    <div id="carritoPanel">
+        <h2>Carrito</h2>
+        <ul id="listaCarrito"></ul>
+
+        <p class="total">Total: $<span id="totalCarrito">0</span></p>
+
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+        <button class="btn-comprar" onclick="finalizarCompra()">Finalizar compra</button>
+    </div>
+
+    
+    <script src="carritooo.js"></script>
+</body>
+
+
+<script src="carritooo.js"></script>
+</body>
+</html>

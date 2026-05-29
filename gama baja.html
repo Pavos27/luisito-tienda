@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        <img src="IMAGENES/logo app.jpg" alt="">
+        </div>
+        <h1>MICROCONTROLADORES Gama media</h1>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="carrito"><a href="#" id="btnCarrito">Carrito</a></li>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="gama alta.html">Gama alta</a></li>
+                    <li><a href="gama media.html">Gama media</a></li>
+                    <li><a href="Untitled-1.html">Formas de pago</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <div class="contenedor-items">
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/PIC10F200.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>PIC10F200</h2>
+            <h3>de memoria Flash, 8 bits de Microchip, destacado por ser extremadamente pequeño, de bajo costo y bajo consumo. Basado en arquitectura RISC, cuenta con 
+                   
+                de SRAM</h3>
+            <p class="precio">$55</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 55)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/PIC12F508.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>PIC12F508</h2>
+            <h3> 8 bits de bajo costo, 8 pines y alto rendimiento (arquitectura RISC), ideal para aplicaciones simples de control. Cuenta con 512-768 palabras de memoria flash, 25 bytes de RAM</h3>
+            <p class="precio">$38</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 38)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/ATtiny85 K.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>ATtiny85</h2>
+            <h3>8 bits, alto rendimiento y bajo consumo de Microchip, con 8 pines (encapsulado DIP-8 comúnmente), 8KB Flash, 512B SRAM y 512B EEPROM</h3>
+            <p class="precio">$80</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 80)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="IMAGENES/PIC16F54 CUM.jpg" alt="">
+        </figure>
+        <div class="info-producto">
+            <h2>PIC16F54</h2>
+            <h3>8 bits basado en Flash de alto rendimiento y bajo costo, ideal para aplicaciones sencillas. Cuenta con 768 bytes de memoria de programa, 25 bytes de RAM</h3>
+            <p class="precio">$35</p>
+            <button onclick="agregarAlCarrito('2 placas de microcontrolador', 35)">Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+
+<!--  CARRITO LATERAL -->
+<div id="carritoPanel">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+
+    <p class="total">Total: $<span id="totalCarrito">0</span></p>
+
+    <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button class="btn-comprar" onclick="finalizarCompra()">Finalizar compra</button>
+</div>
+
+
+<script src="carritooo.js"></script>
+</body>
+
+
+<script src="carritooo.js"></script>
+</body>
+
+</html>
